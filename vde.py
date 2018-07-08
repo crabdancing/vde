@@ -34,8 +34,8 @@ print('Now building new rules!')
 
 # Iterate through list of domains
 for domain in open('/etc/vde.conf', 'r').readlines():
-    domain = line.strip()
-    print('Querying "%s "...' % domain)
+    domain = domain.strip()
+    print('Querying "%s"...' % domain)
     # Query for IP of each domain
     try:
         answer=dns.resolver.query(domain, "A")
