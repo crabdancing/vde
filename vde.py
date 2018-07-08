@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # VPN Domain Exceptions (VDE)
 
-#TODO: refactor to be more general
-#TODO: e.g. should be possible to use for PIA servers, etc
-
 import dns.resolver, os, netifaces
 
 store_file = '/var/cache/undo-vde.sh'
